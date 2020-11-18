@@ -1,0 +1,690 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: Raleway, Raleway-Bold, Raleway-ExtraLight, ProximaNova-Regular;
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+}
+
+/* NAVIGATION MENU */
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  transition: all 1s;
+  z-index: 3;
+  
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 0.5s;
+}
+
+.menu li:hover {
+  background-color: rgba(240, 255, 255, 0.3);
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.scroll {
+  background-color: black;
+}
+
+.menu-icon {
+  line-height: 60px;
+  max-width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+
+/* #region  Carousel */
+
+.carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  padding: 90px 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .car-item {
+  position: relative;
+  display: none;
+  animation: 0.5s ease-in-out;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next {
+  display: block;
+}
+
+.carousel-inner > .next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .to-left {
+  animation-name: left;
+}
+
+.carousel-inner > .from-right {
+  animation-name: right;
+}
+
+.carousel-inner > .to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.carousel-inner > .from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.carousel-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.car-item img {
+  width: 100%;
+  height: 100vh;
+}
+
+.car-item h4 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  padding: 10px 20px;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 786px) {
+  .car-item h4 {
+    top: 50%;
+  }
+
+  .car-item a {
+    bottom: 20%;
+  }
+}
+
+.car-item a {
+  width: 180px;
+  border: 2px solid white;
+  color: white;
+  background: lightgreen;
+  border-radius: 50px;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.car-item a:hover {
+  background: black;
+  color: white;
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 786px) {
+  .car-item a {
+    bottom: 20%;
+  }
+}
+
+.car-item h2 {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  padding: 10px 20px;
+  font-size: 32px;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  cursor: pointer;
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+}
+
+.carousel-control > .arrow {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  opacity: 0.6;
+  transform: translateY(-50%);
+}
+
+.carousel-control > .arrow:hover {
+  opacity: 0.8;
+}
+
+.carousel-control > .arrow.right {
+  right: 50%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%);
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.carousel-indicators li.active {
+  background-color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/* #endregion */
+
+/* ABOUT US */
+
+hr {
+  height: 1px;
+  background-color: lightgreen;
+  border: none;
+  width: 50px;
+}
+
+h2,
+h5 {
+  text-align: center;
+  color: grey;
+}
+
+.container {
+  /* text-align: center; */
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 80%;
+}
+
+.aboutus {
+  margin-bottom: 50px;
+}
+
+.flexing {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+}
+
+.flexing i {
+  display: flex;
+  line-height: inherit;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: grey;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexing i:hover {
+  background: lightgreen;
+  color: white;
+  transition: all 0.5s;
+}
+
+.aboutus a {
+  width: 180px;
+  border: 2px solid white;
+  color: white;
+  background: lightgreen;
+  border-radius: 50px;
+  display: block;
+  margin: 100px auto 0;
+  padding: 10px 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.aboutus a:hover {
+  background: black;
+  color: white;
+  transition: all 0.5s;
+}
+
+/* LOREM IPSUM PART */
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lorem {
+  background: white;
+  padding: 10px 0 40px;
+  flex: 1;
+  margin-top: 0px;
+}
+
+.lorem img {
+  display: block;
+  margin-top: 70px;
+  max-width: 600px;
+  height: auto;
+}
+
+.lorem h2 {
+  font-size: 60px;
+  line-height: 96px;
+  font-weight: 200;
+}
+
+.lorem p {
+  padding: 50px 0;
+}
+
+.lorem a {
+  width: 180px;
+  border: 2px solid white;
+  color: white;
+  background: lightgreen;
+  border-radius: 50px;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.lorem a:hover {
+  background: black;
+  color: white;
+  transition: all 0.5s;
+}
+
+#work {
+  background: rgb(238, 237, 237);
+}
+
+.lorem-text1 {
+  margin-left: 45px;
+}
+
+.lorem-text2 {
+  margin-right: 45px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* =========================================================== */
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 769px) {
+  header {
+    width: 100%;
+  }
+
+  header.sticky {
+    padding: 5px 0;
+  }
+
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  #myNav {
+    overflow: hidden;
+    color: white;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+
+  .show-menu {
+    max-height: 400px;
+  }
+
+  .menu li:hover {
+    background-color: grey;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    display: block;
+  }
+
+  nav ul li a {
+    display: block;
+    font-size: 20px !important;
+    font-weight: bold;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .logo h1 a img {
+    padding-top: 5px;
+  }
+
+  /* ABOUT US */
+
+  .aboutus {
+    padding: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .aboutus h2, .lorem h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .aboutus h2, .aboutus h5 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutus i {
+    width: 125px;
+    height: 125px;
+    padding-top: 8%;
+  }
+
+  .aboutus h3 {
+    padding: 20px 0 20px;
+  }
+
+  .aboutus p {
+    padding-bottom: 20px;
+  }
+
+  .aboutus a {
+    margin: 25px auto 50px;
+   
+  }
+
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .flexing {
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 5%;
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .flexing div {
+    width: 100%;
+  }
+
+  .flexing i {
+    align-items: center;
+    height: 100px;
+  }
+
+  /* LOREM */
+
+  .lorem p {
+    padding: 10px 0;
+  }
+
+  .lorem {
+    padding: 30px 0;
+    width: 100%;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lorem img {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lorem-text1 {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .lorem-text2 {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  
+  .grid {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+  }
+
+  #dorem a {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #work {
+    background: white;
+    margin-bottom: 30px;
+  }
+
+  #work a {
+    margin: auto;
+  }
+
+  .dorem {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .lorem p {
+    padding: 10px 0;
+  }
+
+  .lorem {
+    padding: 30px 0;
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .lorem img {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lorem-text1 {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .lorem-text2 {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .flexing {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .flexing div {
+    width: 90%;
+  }
+
+  .grid {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #dorem a {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #work {
+    background: white;
+  }
+
+  #work a {
+    margin: auto;
+  }
+
+  .dorem {
+    flex-direction: column-reverse;
+  }
+}
