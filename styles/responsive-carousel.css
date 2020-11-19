@@ -1,0 +1,101 @@
+@media only screen and (max-width: 786px) {
+    .car-item a {
+      bottom: 20%;
+    }
+  }
+  
+  .car-item h2 {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    padding: 10px 20px;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    cursor: pointer;
+  }
+  
+  .carousel-control.right {
+    right: 0;
+    left: auto;
+  }
+  
+  .carousel-control > .arrow {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    opacity: 0.6;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control > .arrow:hover {
+    opacity: 0.8;
+  }
+  
+  .carousel-control > .arrow.right {
+    right: 50%;
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%);
+  }
+  
+  .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: #ffffff;
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  @keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }

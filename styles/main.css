@@ -1,0 +1,160 @@
+/* ABOUT US */
+
+  hr {
+    height: 1px;
+    background-color: lightgreen;
+    border: none;
+    width: 50px;
+  }
+  
+  h2, h5 {
+    text-align: center;
+    color: grey;
+  }
+  
+  .container {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+  }
+  
+  .aboutus {
+    margin-bottom: 50px;
+  }
+  
+  .flexing {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .flexing i {
+    display: flex;
+    line-height: inherit;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: grey;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .flexing i:hover {
+    background: lightgreen;
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  .aboutus a {
+    width: 180px;
+    border: 2px solid white;
+    color: white;
+    background: lightgreen;
+    border-radius: 50px;
+    display: block;
+    margin: 100px auto 0;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .aboutus a:hover {
+    background: black;
+    color: white;
+    transition: all 0.5s;
+  }
+  
+/* LOREM IPSUM PART */
+  
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lorem {
+    background: white;
+    padding: 10px 0 40px;
+    flex: 1;
+    margin-top: 0px;
+  }
+  
+  .lorem img {
+    display: block;
+    margin-top: 70px;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .lorem h2 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 200;
+  }
+  
+  .lorem p {
+    padding: 0px 30px 20px;
+  }
+  
+  .lorem a {
+    width: 180px;
+    border: 2px solid white;
+    color: white;
+    background: lightgreen;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .lorem a:hover {
+    background: black;
+    color: white;
+    transition: all 0.5s;
+  }
+
+  .lorem-text2, .lorem-text1 {
+      height: 400px;
+  }
+  
+  .lorem-text2 {
+      margin-top: -30px;
+  }
+
+  .lorem-text2 a {
+    margin-top: -10px;
+  }
+
+  #work {
+    background: rgb(238, 237, 237);
+  }
+  
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }

@@ -1,0 +1,62 @@
+@media only screen and (max-width: 950px) {
+  
+  .aboutus {
+    padding: 30px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .aboutus h2, .lorem h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .aboutus h2, .aboutus h5 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutus i {
+    width: 125px !important;
+    height: 100px !important;
+    padding-top: 5%;
+  }
+
+  .aboutus h3 {
+    padding: 20px 0 20px;
+  }
+
+  .aboutus p {
+    padding-bottom: 20px;
+  }
+
+  .aboutus a {
+    margin: 20px auto 20px !important;
+   
+  }
+
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px !important;
+  }
+
+  .flexing {
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .flexing div {
+    width: 100%;
+  }
+
+  .flexing i {
+    align-items: center;
+    height: 100px;
+  }
+}

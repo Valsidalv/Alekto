@@ -1,4 +1,4 @@
-var myNav = document.getElementById("myNav");
+var myNav = document.querySelector(".nav");
 
         window.onscroll = function () {
             "use strict";
@@ -9,10 +9,11 @@ var myNav = document.getElementById("myNav");
             }
         };
 
-        function myFunction() {
+        function menuDrop() {
             document.querySelector(".menu").classList.toggle("show-menu");
             console.log('eee');
         }
+
 
         AOS.init();
 

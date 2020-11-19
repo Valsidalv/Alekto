@@ -1,0 +1,111 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    transition: all 1.5s;
+    z-index: 3;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+}
+
+.top-nav {
+    max-width: 100%;
+}
+  
+.nav-links ul {
+    line-height: 60px;
+    list-style: none;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+}
+  
+.nav-links li:hover {
+    background-color: rgba(240, 255, 255, 0.3);
+}
+  
+.nav-links li {
+    display: inline-block;
+    padding: 16px 40px;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.scroll {
+    background-color: black;
+}
+  
+.menu-icon {
+    line-height: 60px;
+    max-width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media only screen and (max-width: 769px) {
+    
+  
+    .logo {
+      position: fixed;
+      top: 0;
+      margin-top: 16px;
+    }
+  
+    .nav {
+      overflow: hidden;
+      color: white;
+      max-width: 100%;
+    }  
+    
+    .menu {
+      max-height: 0px;
+      max-width: 100%;
+      background: #000;
+    }
+  
+    .show-menu {
+      max-height: 400px;
+    }
+  
+    .menu li:hover {
+      background-color: grey;
+    }
+     
+    .menu li {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      display: block;
+    }
+  
+    .menu li a {
+      display: block;
+      font-size: 20px ;
+      font-weight: bold;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .logo img {
+      padding-top: 5px;
+    }
+}
